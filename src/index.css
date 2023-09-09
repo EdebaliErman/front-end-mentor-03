@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Galada&family=Lily+Script+One&family=Norican&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 bg-bg flex justify-center items-center pt-64
+  }
+}
+
+@layer components {
+  .card {
+    @apply flex justify-center items-center w-[604px] h-[532px] bg-cardbg rounded-xl
+  }
+
+  .card img, .text-header {
+    @apply w-[300px] h-full rounded-l-xl
+  }
+  .text-header {
+    @apply flex flex-col justify-center items-start gap-6 p-5
+  }
+  .text-header h3{
+    @apply text-sm text-textHead tracking-[8px] font-sans mt-5 mb-0
+  }
+  .text-header h1{
+    @apply font-serif font-bold text-text text-4xl tracking-tight
+  }
+  .text-header p{
+    @apply text-textHead  font-[500] font-sans text-lg
+  }
+  .text-header h2{
+    @apply text-money text-4xl font-fraunces flex justify-between items-center gap-3
+  }
+  .text-header h2 span{
+    @apply text-textHead text-lg font-fraunces font-mono flex justify-center items-center line-through font-[480] mb-1
+  }
+  .text-header button{
+    @apply bg-money flex justify-center items-center text-bg font-sans font-bold rounded-xl w-[239px] h-[49px] gap-3 p-3
+  }
+  .text-header button path {
+    @apply w-52 h-52
+  }
+}
